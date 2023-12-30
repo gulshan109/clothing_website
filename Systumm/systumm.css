@@ -1,0 +1,558 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* <---Topbar section */
+.container .topbar {
+    background: blue;
+    display: flex;
+    height: 6.5vh;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: bolder;
+    position: relative;
+}
+
+.container .topbar .social-links {
+    display: flex;
+    color: white;
+    gap: 1rem;
+    position: absolute;
+    left: 0;
+    margin-left: 6rem;
+}
+
+/* <----Navbar section--->>>> */
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    /* background-color: white; */
+    width: 100vw;
+    height: 16vh;
+    gap: 14rem;
+    padding: 4rem;
+    position: fixed;
+    top: 2.4rem;
+    z-index: 5;
+
+}
+
+.navbar img {
+    color: white;
+    height: 11vh;
+    width: 18vw;
+    position: absolute;
+    left: 0;
+    margin: 6rem;
+    color: black;
+}
+
+.main-menu {
+    display: flex;
+}
+
+.menu-items ul {
+    display: flex;
+    gap: 4vw;
+    justify-content: center;
+    text-align: center;
+    color: gainsboro;
+    font-weight: bolder;
+    list-style: none;
+}
+
+.main-menu .account {
+    position: absolute;
+    right: 0;
+    margin-right: 7rem;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.content img {
+    width: 100%;
+    height: 94vh
+}
+
+body section:first-child {
+    height: 160vh !important;
+}
+
+/* Shop categories */
+
+.shop-item {
+    position: absolute;
+    top: 6rem;
+    background: white;
+    height: 25vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-top: 1px solid rgb(185, 175, 175);
+    display: none;
+}
+
+.item-container {
+    margin-left: 5.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    padding: 2rem;
+}
+
+.item-container a {
+    text-decoration: none;
+    color: gray;
+}
+.item-container a:hover{
+    color: black;
+}
+
+/* <---Hoodies section---> */
+
+.hoodies {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+    height: 90vh;
+}
+
+.hoodies h1 {
+    background: linear-gradient(to bottom right, #ff0745, #000cff);
+    background: linear-gradient(to bottom right, #ff0745, #000cff);
+    -webkit-background-clip: text;
+    color: transparent;
+    text-align: center;
+    margin: 20px;
+}
+
+.hoodies-items {
+    height: 100vh;
+    width: 90vw;
+    display: flex;
+    align-items: center;
+    gap: 2.5rem;
+    flex-wrap: wrap;
+}
+
+.hoodies .hoodies-items .items {
+    display: inline-block;
+    height: 100%;
+    width: 20vw;
+    display: flex;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.items p:last-child span:first-child{
+    text-decoration: line-through;
+    margin-right: 0.3rem;
+}
+.hoodies-items a {
+    padding: 0rem;
+    color: black
+}
+
+.hoodies .hoodies-items a div {
+    height: 80%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    margin-bottom: 1.5rem;
+
+}
+
+/* <---------1st item images---->> */
+
+.hoodies .hoodies-items a:nth-child(1) div {
+    background-image: url("https://systumm.com/wp-content/uploads/2023/11/WhatsApp-Image-2023-11-07-at-4.34.44-PM.jpeg");
+}
+
+.hoodies .hoodies-items a:nth-child(1) div:hover {
+    background-image: url("https://systumm.com/wp-content/uploads/2023/11/WhatsApp-Image-2023-11-05-at-10.21.06-PM-2.jpeg");
+
+}
+
+.hoodies .hoodies-items a:hover {
+    transition: 0.5s;
+    /* margin: 1rem; */
+    box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.144);
+    border-radius: 5px;
+    z-index: auto;
+    transform: scale(1.1);
+    padding: 0.5rem;
+    animation-name: disappear;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+}
+@keyframes disappear {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+/* <<<<<<<-------------2nd item image------------------->>>>>>>> */
+
+.hoodies .hoodies-items a:nth-child(2) div {
+    background-image: url("	https://systumm.com/wp-content/uploads/2023/11/WhatsApp-Image-2023-11-05-at-10.42.21-PM-3.jpeg");
+
+}
+
+.hoodies .hoodies-items a:nth-child(2) div:hover {
+    background-image: url("	https://systumm.com/wp-content/uploads/2023/11/WhatsApp-Image-2023-11-05-at-10.42.20-PM-300x375.jpeg");
+    transition: 0.5s;
+
+}
+
+/* <--------3rd items image--------->>>>>>>> */
+
+.hoodies .hoodies-items a:nth-child(3) div {
+    background-image: url("https://systumm.com/wp-content/uploads/2023/11/WhatsApp-Image-2023-11-03-at-2.39.07-PM.jpeg");
+
+}
+
+.hoodies .hoodies-items a:nth-child(3) div:hover {
+    background-image: url("https://systumm.com/wp-content/uploads/2023/11/WhatsApp-Image-2023-11-03-at-2.39.07-PM-3-300x375.jpeg");
+    transition: 0.5s;
+
+}
+
+/* --------------4th items images----> */
+.hoodies .hoodies-items a:nth-child(4) div {
+    background-image: url("	https://systumm.com/wp-content/uploads/2023/11/WhatsApp-Image-2023-11-03-at-12.03.20-AM-300x375.jpeg");
+
+}
+
+.hoodies .hoodies-items a:nth-child(4) div:hover {
+    background-image: url("	https://systumm.com/wp-content/uploads/2023/11/WhatsApp-Image-2023-11-03-at-12.03.36-AM.jpeg");
+    transition: 0.5s;
+
+}
+
+/* <---------5th items image details */
+
+.hoodies .hoodies-items a:nth-child(5) div {
+    background-image: url("https://systumm.com/wp-content/uploads/2023/11/WhatsApp-Image-2023-11-07-at-4.34.44-PM.jpeg");
+
+}
+
+.hoodies .hoodies-items a:nth-child(5) div:hover {
+    background-image: url("	https://systumm.com/wp-content/uploads/2023/11/WhatsApp-Image-2023-11-02-at-10.39.58-AM-1.jpeg");
+    transition: 0.5s;
+}
+
+/* <---------------------T-shirts section----------------------------------> */
+
+#home-container {
+    height: 370vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+/* background: #000; */
+}
+
+.tshirt {
+    height: 60%;
+    width: 85%;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    flex-direction: column;
+    position: relative;
+    top: 20rem;
+}
+
+.tshirt h1 {
+    background: linear-gradient(to bottom right, #ff0745, #000cff);
+    background: linear-gradient(to bottom right, #ff0745, #000cff);
+    -webkit-background-clip: text;
+    color: transparent;
+    text-align: center;
+    margin: 20px;
+}
+
+.tshirt-items {
+    width: 80vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+
+}
+
+.t-items {
+    height: 80%;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.t-items:hover {
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.185);
+    padding: 1rem;
+    transition: 0.5s;
+    border-radius: 5px;
+}
+
+.tshirt-items a div {
+    height: 80%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.t-items{
+    color: black;
+    text-decoration: none;
+}
+.t-items span{
+    text-decoration: line-through;
+    margin-right: 0.3rem;
+}
+
+/* <---Tshirt first CSS */
+.tshirt-items a:nth-child(1) div {
+    background-image: url("https://systumm.com/wp-content/uploads/2023/11/WhatsApp-Image-2023-11-06-at-5.07.17-PM-300x375.jpeg");
+}
+
+.tshirt-items a:nth-child(1) div:hover {
+    background-image: url("	https://systumm.com/wp-content/uploads/2023/11/WhatsApp-Image-2023-11-06-at-5.06.35-PM.jpeg");
+    transition: 0.5s;
+}
+
+/* <-------Tshirt Secound CSS */
+
+.tshirt-items a:nth-child(2) div {
+    background-image: url("	https://systumm.com/wp-content/uploads/2023/11/WhatsApp-Image-2023-11-06-at-5.52.41-PM-300x375.jpeg");
+}
+
+.tshirt-items a:nth-child(2) div:hover {
+    background-image: url("https://systumm.com/wp-content/uploads/2023/11/WhatsApp-Image-2023-11-06-at-5.52.26-PM.jpeg");
+    transition: 0.5s;
+}
+
+/* <-----Tshirt third CSS */
+
+.tshirt-items a:nth-child(3) div {
+    background-image: url("https://systumm.com/wp-content/uploads/2023/11/WhatsApp-Image-2023-11-06-at-5.22.15-PM-1-300x375.jpeg");
+    transition: 0.5s;
+}
+
+.tshirt-items a:nth-child(3) div:hover {
+    background-image: url("	https://systumm.com/wp-content/uploads/2023/11/WhatsApp-Image-2023-11-06-at-5.22.15-PM.jpeg");
+    transition: 0.5s;
+}
+
+footer {
+    /* position: absolute; */
+    bottom: -5rem;
+}
+
+.bottom-bar {
+    width: 100vw;
+    height: 62vh;
+    background: rgb(226, 234, 255);
+}
+
+.bottom-bar h3 {
+    justify-content: center;
+    text-align: center;
+    padding-top: 70px;
+    color: gray;
+}
+
+.bottom-item {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    gap: 2rem;
+    padding-top: 30px;
+}
+
+.bottom-item a {
+    color: black;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+.bottom-item a:hover {
+    color: gray;
+}
+
+.social-handels {
+    justify-content: center;
+    text-align: center;
+    margin-top: 80px;
+}
+
+.social-handels i:hover {
+    border-radius: 50%;
+    box-shadow: 5px 5px 5px 5px black;
+}
+
+.social-handels i:nth-child(2) {
+    margin: 50px;
+}
+
+.bottom-bar p {
+    justify-content: center;
+    text-align: center;
+}
+
+#shop::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    background-color: #000cff;
+    height: 5px;
+    bottom: 0;
+    right: 0;
+    transition: 0.5s;
+}
+
+#shop::after {
+    width: 10%;
+    left: 0;
+
+}
+
+/* ---------About container --------CSS */
+.about-container {
+    width: 100vw;
+    display: flex;
+    height: 230vh;
+}
+
+.about-content {
+    width: 50vw;
+    justify-content: center;
+    align-items: center;
+    background: black;
+    color: white;
+    display: flex;
+    padding: 6rem;
+    flex-direction: column;
+    height: 230vh;
+
+}
+
+.about-data {
+    width: 85%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    /* background: white; */
+}
+
+.about-img {
+    overflow: hidden;
+}
+
+.about-img .img {
+    width: 50vw;
+    background-image: url("https://systumm.com/wp-content/uploads/2023/11/CG-scaled.jpg");
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: 525%;
+    background-position: top center;
+}
+
+.about-data h4 {
+    text-align: left;
+    /* margin-bottom: 1rem; */
+    color: gray;
+}
+
+.about-data h1 {
+    font-size: 2.8rem;
+    font-weight: bolder;
+    text-align: left;
+    margin-top: 1rem;
+}
+
+.about-data p {
+    margin-top: 2rem;
+    font-size: 1.1rem;
+    line-height: 1.5;
+}
+
+/* ----------contact CSS---------------- */
+.contact-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 140vh;
+}
+
+.contact-img {
+    width: 50vw;
+    height: 140vh;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background-image: url("https://systumm.com/wp-content/uploads/2023/11/CG-scaled.jpg");
+    background-position: center 10%;
+    background-size: 470%;
+    background-repeat: no-repeat;
+}
+
+.contact-content {
+    width: 50vw;
+    height: 140vh;
+    justify-content: center;
+    align-items: center;
+    padding: 6rem;
+    background: white;
+}
+
+.contact-data {
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.contact-content h1 {
+    font-size: 2rem;
+
+}
+.contact-data h3{
+    margin-top: 4rem;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+.contact-content p:nth-of-type(1) {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
